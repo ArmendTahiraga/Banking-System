@@ -12,4 +12,9 @@ public class Account {
     public void checkBalance() {
         System.out.println("Balance: " + balance);
     }
+
+    public void transfer(Account other, int amount) {
+        withdraw(amount);
+        other.deposit(amount);
+    }
 }
